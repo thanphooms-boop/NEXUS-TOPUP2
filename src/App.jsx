@@ -13,9 +13,40 @@ const GameLogos = {
       <span className="font-black text-xs tracking-widest text-yellow-400 mt-2 z-10 drop-shadow-md">ARENA OF VALOR</span>
     </div>
   ),
+  pubg: (
+    <div className="w-full h-full bg-gradient-to-br from-orange-950 via-amber-900/60 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="w-16 h-16 rounded-2xl bg-orange-500/10 border border-orange-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(249,115,22,0.3)]">
+        <svg className="w-10 h-10 text-orange-400 drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span className="font-black text-xs tracking-widest text-orange-400 mt-2 z-10 drop-shadow-md">PUBG MOBILE</span>
+    </div>
+  ),
+  freefire: (
+    <div className="w-full h-full bg-gradient-to-br from-red-950 via-amber-950 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="w-16 h-16 rounded-2xl bg-red-500/10 border border-red-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(239,68,68,0.3)]">
+        <svg className="w-10 h-10 text-red-400 drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.5 4 6.5 1.5 1.5 2.5 3.5 2.5 5.5a6 6 0 1 1-12 0c0-1.05.27-2.05.74-2.91Z"/>
+        </svg>
+      </div>
+      <span className="font-black text-xs tracking-widest text-red-400 mt-2 z-10 drop-shadow-md">FREE FIRE</span>
+    </div>
+  ),
+  mlbb: (
+    <div className="w-full h-full bg-gradient-to-br from-blue-950 via-indigo-950 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+        <svg className="w-10 h-10 text-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+          <polyline points="2 17 12 22 22 17"/>
+          <polyline points="2 12 12 17 22 12"/>
+        </svg>
+      </div>
+      <span className="font-black text-xs tracking-widest text-blue-300 mt-2 z-10 drop-shadow-md">MOBILE LEGENDS</span>
+    </div>
+  ),
   valorant: (
     <div className="w-full h-full bg-gradient-to-br from-rose-950 via-red-900/60 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.25)_0%,transparent_70%)]"></div>
       <div className="w-16 h-16 rounded-2xl bg-rose-500/10 border border-rose-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(244,63,94,0.3)]">
         <svg className="w-10 h-10 text-rose-500 drop-shadow-[0_0_8px_rgba(244,63,94,0.8)]" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25 30 L45 70 H60 L40 30 H25 Z" fill="currentColor" />
@@ -46,6 +77,28 @@ const GameLogos = {
       </div>
       <span className="font-black text-xs tracking-widest text-purple-300 mt-2 z-10 drop-shadow-md">GENSHIN IMPACT</span>
     </div>
+  ),
+  honkai: (
+    <div className="w-full h-full bg-gradient-to-br from-fuchsia-950 via-purple-950 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="w-16 h-16 rounded-2xl bg-fuchsia-500/10 border border-fuchsia-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(217,70,239,0.3)]">
+        <svg className="w-10 h-10 text-fuchsia-400 drop-shadow-[0_0_8px_rgba(217,70,239,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </div>
+      <span className="font-black text-xs tracking-widest text-fuchsia-300 mt-2 z-10 drop-shadow-md">STAR RAIL</span>
+    </div>
+  ),
+  eafc: (
+    <div className="w-full h-full bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+        <svg className="w-10 h-10 text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2v20M2 12h20"/>
+        </svg>
+      </div>
+      <span className="font-black text-xs tracking-widest text-emerald-300 mt-2 z-10 drop-shadow-md">EA FC MOBILE</span>
+    </div>
   )
 };
 
@@ -65,11 +118,60 @@ const gamesData = [
       { id: 'rov3', name: '350 คูปอง', price: 340 }, 
       { id: 'rov4', name: '875 คูปอง', price: 840 },
       { id: 'rov5', name: '1,750 คูปอง', price: 1680 },
-      { id: 'rov6', name: 'Valor Pass (พรีเมียมประจำซีซัน)', price: 299 }
+      { id: 'rov6', name: 'Valor Pass', price: 299 }
     ] 
   },
   { 
     id: 1, 
+    name: 'PUBG Mobile', 
+    category: 'mobile', 
+    iconKey: 'pubg',
+    currency: 'Unknown Cash (UC)', 
+    idLabel: 'Player ID (Character ID)',
+    idPlaceholder: 'เช่น 5123456789',
+    helpText: 'ตรวจสอบ Character ID ให้ถูกต้องก่อนทำรายการ',
+    packages: [
+      { id: 'p1', name: '60 UC', price: 29 },
+      { id: 'p2', name: '325 UC', price: 149 },
+      { id: 'p3', name: '660 UC', price: 299 },
+      { id: 'p4', name: '1,800 UC', price: 799 },
+      { id: 'p5', name: '3,850 UC', price: 1590 }
+    ] 
+  },
+  { 
+    id: 2, 
+    name: 'Free Fire', 
+    category: 'mobile', 
+    iconKey: 'freefire',
+    currency: 'เพชร (Diamonds)', 
+    idLabel: 'Player ID (UID)',
+    idPlaceholder: 'กรอก UID ผู้เล่น Free Fire',
+    helpText: 'คัดลอก UID ได้จากหน้าโปรไฟล์ในเกม',
+    packages: [
+      { id: 'ff1', name: '110 เพชร', price: 35 },
+      { id: 'ff2', name: '310 เพชร', price: 99 },
+      { id: 'ff3', name: '580 เพชร', price: 175 },
+      { id: 'ff4', name: '1,160 เพชร', price: 350 }
+    ] 
+  },
+  { 
+    id: 3, 
+    name: 'Mobile Legends: Bang Bang', 
+    category: 'mobile', 
+    iconKey: 'mlbb',
+    currency: 'Diamonds & Zone ID', 
+    idLabel: 'User ID & Zone ID',
+    idPlaceholder: 'เช่น 12345678 (1234)',
+    helpText: 'ระบุ User ID และ Zone ID (ในวงเล็บหลังไอดี)',
+    packages: [
+      { id: 'ml1', name: '86 Diamonds', price: 35 },
+      { id: 'ml2', name: '172 Diamonds', price: 70 },
+      { id: 'ml3', name: '257 Diamonds', price: 105 },
+      { id: 'ml4', name: '706 Diamonds', price: 275 }
+    ] 
+  },
+  { 
+    id: 4, 
     name: 'VALORANT', 
     category: 'pc', 
     iconKey: 'valorant',
@@ -84,7 +186,7 @@ const gamesData = [
     ] 
   },
   { 
-    id: 2, 
+    id: 5, 
     name: 'Roblox', 
     category: 'mobile', 
     iconKey: 'roblox',
@@ -94,11 +196,12 @@ const gamesData = [
     helpText: 'ไม่ต้องกรอกรหัสผ่าน ปลอดภัย 100%',
     packages: [
       { id: 'r1', name: '400 Robux', price: 149 }, 
-      { id: 'r2', name: '800 Robux', price: 299 }
+      { id: 'r2', name: '800 Robux', price: 299 },
+      { id: 'r3', name: '1,700 Robux', price: 599 }
     ] 
   },
   { 
-    id: 3, 
+    id: 6, 
     name: 'Genshin Impact', 
     category: 'mobile', 
     iconKey: 'genshin',
@@ -108,7 +211,38 @@ const gamesData = [
     helpText: 'ตรวจสอบ Server ให้ถูกต้องก่อนทำรายการ',
     packages: [
       { id: 'g1', name: '60 Crystals', price: 35 }, 
-      { id: 'g2', name: '300 Crystals', price: 169 }
+      { id: 'g2', name: '300 Crystals', price: 169 },
+      { id: 'g3', name: '980 Crystals', price: 499 }
+    ] 
+  },
+  { 
+    id: 7, 
+    name: 'Honkai: Star Rail', 
+    category: 'mobile', 
+    iconKey: 'honkai',
+    currency: 'Oneiric Shards', 
+    idLabel: 'UID & Server',
+    idPlaceholder: 'เช่น 800987654 (Asia)',
+    helpText: 'ตรวจสอบ UID ที่มุมขวาล่างของหน้าจอเกม',
+    packages: [
+      { id: 'h1', name: '60 Shards', price: 35 }, 
+      { id: 'h2', name: '300 Shards', price: 169 },
+      { id: 'h3', name: '980 Shards', price: 499 }
+    ] 
+  },
+  { 
+    id: 8, 
+    name: 'EA FC Mobile', 
+    category: 'mobile', 
+    iconKey: 'eafc',
+    currency: 'FC Points', 
+    idLabel: 'User ID / In-game Name',
+    idPlaceholder: 'กรอกไอดีผู้เล่น EA FC Mobile',
+    helpText: 'ตรวจสอบไอดีภายในเกมให้ถูกต้อง',
+    packages: [
+      { id: 'fc1', name: '100 FC Points', price: 35 },
+      { id: 'fc2', name: '520 FC Points', price: 175 },
+      { id: 'fc3', name: '1,070 FC Points', price: 350 }
     ] 
   }
 ];
@@ -230,9 +364,9 @@ export default function App() {
               <span className="text-xs font-bold text-cyan-300">ระบบเติมเกมอัตโนมัติ 24 ชั่วโมง</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight mb-4 text-white">
-              เติมเกม <span className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent">RoV คูปอง</span> ราคาถูกที่สุด
+              เติมเกม <span className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent">RoV & PUBG</span> ราคาถูกที่สุด
             </h1>
-            <p className="text-slate-300 text-sm sm:text-base">รองรับระบบ OpenID ปลอดภัย ไม่ต้องใช้รหัสผ่าน คูปองเข้าไอดีทันทีภายใน 1-3 วินาที</p>
+            <p className="text-slate-300 text-sm sm:text-base">รองรับระบบเติมเกมอัตโนมัติ ปลอดภัย ไม่ต้องใช้รหัสผ่าน เครดิตเข้าไอดีทันทีภายใน 1-3 วินาที</p>
           </div>
         </div>
 
