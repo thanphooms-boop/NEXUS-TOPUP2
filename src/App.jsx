@@ -13,6 +13,18 @@ const GameLogos = {
       <span className="font-black text-xs tracking-widest text-yellow-400 mt-2 z-10 drop-shadow-md">ARENA OF VALOR</span>
     </div>
   ),
+  avatarstar: (
+    <div className="w-full h-full bg-gradient-to-br from-cyan-950 via-teal-900/60 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.25)_0%,transparent_70%)]"></div>
+      <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+        <svg className="w-10 h-10 text-cyan-400 drop-shadow-[0_0_8px_rgba(6,182,212,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v10M7 12h10"/>
+        </svg>
+      </div>
+      <span className="font-black text-xs tracking-widest text-cyan-300 mt-2 z-10 drop-shadow-md">AVATAR STAR TH</span>
+    </div>
+  ),
   pubg: (
     <div className="w-full h-full bg-gradient-to-br from-orange-950 via-amber-900/60 to-slate-950 flex flex-col items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
       <div className="w-16 h-16 rounded-2xl bg-orange-500/10 border border-orange-500/40 flex items-center justify-center backdrop-blur-sm z-10 shadow-[0_0_20px_rgba(249,115,22,0.3)]">
@@ -123,6 +135,22 @@ const gamesData = [
   },
   { 
     id: 1, 
+    name: 'Avatar Star Thailand', 
+    category: 'pc', 
+    iconKey: 'avatarstar',
+    currency: 'Star Cash / Gems', 
+    idLabel: 'Game ID / Username',
+    idPlaceholder: 'กรอกไอดีหรือชื่อตัวละคร Avatar Star',
+    helpText: 'เตรียมพร้อมรับความสนุกกับเกมชูตเตอร์สุดน่ารักในไทย',
+    packages: [
+      { id: 'as1', name: '100 Star Cash', price: 90 },
+      { id: 'as2', name: '300 Star Cash', price: 270 },
+      { id: 'as3', name: '500 Star Cash', price: 450 },
+      { id: 'as4', name: '1,000 Star Cash', price: 890 }
+    ] 
+  },
+  { 
+    id: 2, 
     name: 'PUBG Mobile', 
     category: 'mobile', 
     iconKey: 'pubg',
@@ -134,12 +162,11 @@ const gamesData = [
       { id: 'p1', name: '60 UC', price: 29 },
       { id: 'p2', name: '325 UC', price: 149 },
       { id: 'p3', name: '660 UC', price: 299 },
-      { id: 'p4', name: '1,800 UC', price: 799 },
-      { id: 'p5', name: '3,850 UC', price: 1590 }
+      { id: 'p4', name: '1,800 UC', price: 799 }
     ] 
   },
   { 
-    id: 2, 
+    id: 3, 
     name: 'Free Fire', 
     category: 'mobile', 
     iconKey: 'freefire',
@@ -150,12 +177,11 @@ const gamesData = [
     packages: [
       { id: 'ff1', name: '110 เพชร', price: 35 },
       { id: 'ff2', name: '310 เพชร', price: 99 },
-      { id: 'ff3', name: '580 เพชร', price: 175 },
-      { id: 'ff4', name: '1,160 เพชร', price: 350 }
+      { id: 'ff3', name: '580 เพชร', price: 175 }
     ] 
   },
   { 
-    id: 3, 
+    id: 4, 
     name: 'Mobile Legends: Bang Bang', 
     category: 'mobile', 
     iconKey: 'mlbb',
@@ -166,12 +192,11 @@ const gamesData = [
     packages: [
       { id: 'ml1', name: '86 Diamonds', price: 35 },
       { id: 'ml2', name: '172 Diamonds', price: 70 },
-      { id: 'ml3', name: '257 Diamonds', price: 105 },
-      { id: 'ml4', name: '706 Diamonds', price: 275 }
+      { id: 'ml3', name: '257 Diamonds', price: 105 }
     ] 
   },
   { 
-    id: 4, 
+    id: 5, 
     name: 'VALORANT', 
     category: 'pc', 
     iconKey: 'valorant',
@@ -186,7 +211,7 @@ const gamesData = [
     ] 
   },
   { 
-    id: 5, 
+    id: 6, 
     name: 'Roblox', 
     category: 'mobile', 
     iconKey: 'roblox',
@@ -196,12 +221,11 @@ const gamesData = [
     helpText: 'ไม่ต้องกรอกรหัสผ่าน ปลอดภัย 100%',
     packages: [
       { id: 'r1', name: '400 Robux', price: 149 }, 
-      { id: 'r2', name: '800 Robux', price: 299 },
-      { id: 'r3', name: '1,700 Robux', price: 599 }
+      { id: 'r2', name: '800 Robux', price: 299 }
     ] 
   },
   { 
-    id: 6, 
+    id: 7, 
     name: 'Genshin Impact', 
     category: 'mobile', 
     iconKey: 'genshin',
@@ -211,12 +235,11 @@ const gamesData = [
     helpText: 'ตรวจสอบ Server ให้ถูกต้องก่อนทำรายการ',
     packages: [
       { id: 'g1', name: '60 Crystals', price: 35 }, 
-      { id: 'g2', name: '300 Crystals', price: 169 },
-      { id: 'g3', name: '980 Crystals', price: 499 }
+      { id: 'g2', name: '300 Crystals', price: 169 }
     ] 
   },
   { 
-    id: 7, 
+    id: 8, 
     name: 'Honkai: Star Rail', 
     category: 'mobile', 
     iconKey: 'honkai',
@@ -226,12 +249,11 @@ const gamesData = [
     helpText: 'ตรวจสอบ UID ที่มุมขวาล่างของหน้าจอเกม',
     packages: [
       { id: 'h1', name: '60 Shards', price: 35 }, 
-      { id: 'h2', name: '300 Shards', price: 169 },
-      { id: 'h3', name: '980 Shards', price: 499 }
+      { id: 'h2', name: '300 Shards', price: 169 }
     ] 
   },
   { 
-    id: 8, 
+    id: 9, 
     name: 'EA FC Mobile', 
     category: 'mobile', 
     iconKey: 'eafc',
@@ -241,8 +263,7 @@ const gamesData = [
     helpText: 'ตรวจสอบไอดีภายในเกมให้ถูกต้อง',
     packages: [
       { id: 'fc1', name: '100 FC Points', price: 35 },
-      { id: 'fc2', name: '520 FC Points', price: 175 },
-      { id: 'fc3', name: '1,070 FC Points', price: 350 }
+      { id: 'fc2', name: '520 FC Points', price: 175 }
     ] 
   }
 ];
@@ -364,9 +385,9 @@ export default function App() {
               <span className="text-xs font-bold text-cyan-300">ระบบเติมเกมอัตโนมัติ 24 ชั่วโมง</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight mb-4 text-white">
-              เติมเกม <span className="bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent">RoV & PUBG</span> ราคาถูกที่สุด
+              เติมเกม <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent">Avatar Star & Top Games</span> ราคาถูกที่สุด
             </h1>
-            <p className="text-slate-300 text-sm sm:text-base">รองรับระบบเติมเกมอัตโนมัติ ปลอดภัย ไม่ต้องใช้รหัสผ่าน เครดิตเข้าไอดีทันทีภายใน 1-3 วินาที</p>
+            <p className="text-slate-300 text-sm sm:text-base">รองรับการเติมเกม Avatar Star และเกมดังยอดฮิต ปลอดภัย รวดเร็ว เครดิตเข้าไอดีทันที</p>
           </div>
         </div>
 
@@ -379,9 +400,9 @@ export default function App() {
               onClick={() => handleOpenCheckout(game)}
               className="group bg-[#070e24] border border-cyan-900/40 hover:border-cyan-400 rounded-2xl overflow-hidden shadow-lg transition-all cursor-pointer flex flex-col relative"
             >
-              {game.id === 0 && (
-                <div className="absolute top-3 right-3 z-20 bg-gradient-to-r from-yellow-500 to-amber-600 text-slate-950 font-black text-[10px] px-2.5 py-0.5 rounded-full shadow-lg">
-                  นิยมสูงสุด 🔥
+              {game.id === 1 && (
+                <div className="absolute top-3 right-3 z-20 bg-gradient-to-r from-cyan-400 to-teal-500 text-slate-950 font-black text-[10px] px-2.5 py-0.5 rounded-full shadow-lg">
+                  มาใหม่ 🔥
                 </div>
               )}
               <div className="h-44 relative">{GameLogos[game.iconKey]}</div>
