@@ -1,3 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer utilities {
+  /* เอฟเฟกต์เรืองแสงนีออนขอบการ์ด */
+  .cyber-border {
+    position: relative;
+  }
+  .cyber-border::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+  .cyber-border:hover::after {
+    opacity: 1;
+  }
+}
+
+/* ปรับแต่ง Scrollbar ให้เข้ากับธีมเกม */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #0e7490;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
